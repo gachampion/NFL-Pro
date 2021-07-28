@@ -43,6 +43,7 @@ body {
 
 
 }
+
 .sundayTitle{
     background-color: #5F97C0;
     font-size: 30px;
@@ -71,4 +72,37 @@ body {
     margin-left: 470px;
     font-weight:bold;
     margin-top: -55px;
+}
+
+#progressbar {
+    background-color: #2B4355;
+    border-radius: 13px; /* (height of inner div) / 2 + padding */
+    padding: 3px;
+    width: 170px;
+    justify-content:space-between
+  }
+  
+  #progressbar > div {
+     background: linear-gradient(45deg, #3076F9 0%, #00D3D3 100%);;
+     width: 40%; /* Adjust with JavaScript */
+     height: 8px;
+     border-radius: 8px;
+  }
+
+.pbSun{
+    float: left;
+    margin-left: 50px;
+    margin-top: -10px;
+}
+
+.pbMon{
+    float: left;
+    margin-left: 35px;
+    margin-top: -10px;
+}
+
+.pbThurs{
+    float: left;
+    margin: 35px;
+    margin-top: -10px;
 }
