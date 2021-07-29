@@ -30,6 +30,7 @@ body {
 .setupTitleEmphasis {
     background: linear-gradient(89.55deg, #B07AFF, #45FAFA);
     -webkit-background-clip: text;
+    font-family: All-ProSans-Heavy;
     -webkit-text-fill-color: transparent;
     margin-left: 15px;
 }
@@ -38,6 +39,7 @@ body {
     background-color: #5F97C0;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: All-ProSans-Heavy;
     margin-left: 15px;
     font-weight:bold;
 
@@ -46,6 +48,7 @@ body {
 .sundayTitle{
     background-color: #5F97C0;
     font-size: 30px;
+    font-family: All-ProSans-Heavy;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-left: 50px;
@@ -57,6 +60,7 @@ body {
     background-color: #5F97C0;
     font-size: 30px;
     -webkit-background-clip: text;
+    font-family: All-ProSans-Heavy;
     -webkit-text-fill-color: transparent;
     margin-left: 260px;
     font-weight:bold;
@@ -67,6 +71,7 @@ body {
     background-color: #5F97C0;
     font-size: 30px;
     -webkit-background-clip: text;
+    font-family: All-ProSans-Heavy;
     -webkit-text-fill-color: transparent;
     margin-left: 470px;
     font-weight:bold;
