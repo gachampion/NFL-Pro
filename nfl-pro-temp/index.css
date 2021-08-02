@@ -203,9 +203,43 @@ body {
     text-align: center;
     line-height: 100px;
     margin-right:15px;
-    margin-top: 10%;
+    margin-top: 13%;
 }
 
 .active{
     background-color: #8DB5D2;
+}
+
+.bettingTitle {
+    background-color: #5F97C0;
+    font-size: 23px;
+    font-family: All-ProSans-Heavy;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 50px;
+    font-weight:bold;
+    margin-top: -5px;
+}
+
+.fantasyTitle{
+    background-color: #5F97C0;
+    font-size: 23px;
+    -webkit-background-clip: text;
+    font-family: All-ProSans-Heavy;
+    -webkit-text-fill-color: transparent;
+    margin-left: 370px;
+    font-weight:bold;
+    margin-top: -45px;
+}
+
+.pbBet{
+    float: left;
+    margin-left: 50px;
+    margin-top: -10px;
+}
+
+.pbFan{
+    float: left;
+    margin-left: 140px;
+    margin-top: -10px;
 }

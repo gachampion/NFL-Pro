@@ -54,6 +54,22 @@ $( ".lb7" ).click(function() {
     $(".progressPercent3").css('width', '50%');
 });
 
+$( ".lb8" ).click(function() {
+    $( ".lb8" ).css('color', '#00EE5F');
+    $( ".lb8" ).css('background-color', '#0C2131');
+    $( ".lb8" ).css('box-shadow', 'inset 0px 4px 4px rgba(0, 0, 0, 0.25)');
+    $( ".lb8" ).html('<p>OK</p>');
+    $(".progressPercent").css('width', '50%');
+});
+
+$( ".lb9" ).click(function() {
+    $( ".lb9" ).css('color', '#00EE5F');
+    $( ".lb9" ).css('background-color', '#0C2131');
+    $( ".lb9" ).css('box-shadow', 'inset 0px 4px 4px rgba(0, 0, 0, 0.25)');
+    $( ".lb9" ).html('<p>OK</p>');
+    $(".progressPercent").css('width', '50%');
+});
+
 var header = document.getElementById("navContainer");
 var btns = header.getElementsByClassName("circle");
 for (var i = 0; i < btns.length; i++) {
