@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'All-Pro Sans Black';
+  src: local('All-Pro Sans'), url(./assets/fonts/All-Pro\ Sans/All-ProSans-Black.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'All-Pro Sans Bold';
+  src: local('All-Pro Sans'), url(./assets/fonts/All-Pro\ Sans/All-ProSans-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'All-Pro Sans Heavy';
+  src: local('All-Pro Sans'), url(./assets/fonts/All-Pro\ Sans/All-ProSans-Heavy.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'All-Pro Sans Light';
+  src: local('All-Pro Sans'), url(./assets/fonts/All-Pro\ Sans/All-ProSans-Light.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'All-Pro Sans Medium';
+  src: local('All-Pro Sans'), url(./assets/fonts/All-Pro\ Sans/All-ProSans-Medium.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'All-Pro Sans Regular';
+  src: local('All-Pro Sans'), url(./assets/fonts/All-Pro\ Sans/All-ProSans-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'All-Pro Sans SemiBold';
+  src: local('All-Pro Sans'), url(./assets/fonts/All-Pro\ Sans/All-ProSans-SemiBold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'All-Pro Sans Thin';
+  src: local('All-Pro Sans'), url(./assets/fonts/All-Pro\ Sans/All-ProSans-Thin.ttf) format('truetype');
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  width: 99.95px;
+  height: 45.91px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+  position: absolute;
+  width: 893.38px;
+  height: 45.91px;
+  left: 62.08px;
+  top: 66.43px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
 }
 
-.App-header {
-  background-color: #282c34;
+.taskBar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  position: static;
+  width: 728.24px;
+  height: 31.66px;
+  left: 164.95px;
+  padding-top: 10px;
+  top: 0px;
+}
+
+.taskBar a {
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 7.30673px;
+  position: static;
+  width: 167.73px;
+  height: 31.66px;
+  /* left: calc(50% - 133.96px/2 + 297.14px); */
+  bottom: 0px;
+
+  font-family: 'All-Pro Sans Regular';
+  font-weight: 500;
+  font-size: 17.049px;
+  line-height: 29px;
+  color: #F6F6F6;
+  /* or 171% */
+
+  text-align: center;
+}
+
+.taskBar #mp {
+  width: 133.96px;
+  height: 31.66px;
+  left: calc(50% - 133.96px/2 - 185.1px);
+}
+
+.taskBar #h {
+  width: 60px;
+  padding-left: 80px;
+  font-family: 'All-Pro Sans SemiBold';
+  background: linear-gradient(45deg, #E47AFF 40%, #45FAFA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.taskBar #eq {
+  width: 100.56px;
+  height: 31.66px;
+  left: calc(50% - 120.56px/2 - 50.54px);
+}
+
+.taskBar #nflcom {
+  width: 133.96px;
+  height: 31.66px;
+  left: calc(50% - 133.96px/2 + 297.14px);
+}
+
+.taskBar #ca {
+  left: calc(50% - 205.81px/2 + 119.95px);
+}
+
+.App {
+  background: rgba(27, 26, 38, 1);
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-direction:row;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

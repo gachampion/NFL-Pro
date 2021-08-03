@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import logo from './assets/pro_logo.svg';
+import GameTray from "./components/gameTray/GameTray";
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <div class="header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <div class="taskBar">
+            <a id="h">Home</a>
+            <a id="mp">My Profile</a>
+            <a id="eq">Edit Queue</a>
+            <a id="ca">Connected Accounts</a>
+            <a id="nflcom">NFL.com</a>
+          </div>
+        </div>
+        <GameTray />
     </div>
   );
 }
