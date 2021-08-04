@@ -4,6 +4,6 @@ import "./Queue.css";
 
 export default function Queue() {
     return (
-        
+        <div></div>
     );
 }
