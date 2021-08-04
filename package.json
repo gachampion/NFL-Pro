@@ -1,0 +1,10 @@
+{
+  "name": "nfl-pro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "description": "null",
+  "repository": "https://github.com/n/a",
+  "author": "sahil",
+  "private": false
+}
