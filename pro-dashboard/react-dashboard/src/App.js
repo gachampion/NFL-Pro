@@ -1,5 +1,6 @@
 import logo from './assets/pro_logo.svg';
 import GameTray from "./components/gameTray/GameTray";
+import VideoStream from "./components/videoStream/VideoStream";
 import './App.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           </div>
         </div>
         <GameTray />
+        <VideoStream />
     </div>
   );
 }
