@@ -13,10 +13,9 @@ export default function VideoStream() {
             class="video-js"
             preload="auto"
             controls
-            width="1040"
-            height="585"
+            width="1382"
+            height="777"
             poster={streamPlaceholder}
-
         >
             <source src={streamContent} type="video/mp4" />
         </video>

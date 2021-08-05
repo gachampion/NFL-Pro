@@ -8,3 +8,53 @@
     background: #193347;
     border-radius: 12.4167px;
 }
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 367.29px;
+    height: 23.59px;
+    left: 17px;
+    top: 30px;
+}
+
+.tabs > img {
+    padding-inline: 6%;
+}
+
+.selectedWindow {
+    margin-top: 64px;
+}
+
+.selectedWindow2 {
+    margin-top: -10px;
+    margin-left: 1px;
+}
+
+.wrapper video::-webkit-media-controls-timeline, 
+.wrapper video::-webkit-media-controls-current-time-display, 
+.wrapper video::-webkit-media-controls-time-remaining-display {
+    display: initial;
+}
+
+video + button.close {
+    font-size: 10px;   
+    display: block;
+}
+video.hide {
+    display: none;
+}
+
+.vid {
+    position: absolute;
+    left: 1460px;
+    top: 235px;
+}
+
+.hidden {
+    visibility: hidden;
+}
