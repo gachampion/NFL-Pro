@@ -7,6 +7,15 @@ import {
     DropResult,
 } from 'react-beautiful-dnd';
 
+import steelersWinBet from './assets/steelersWinBet.png';
+import travisKelceTDBet from './assets/travisKelceTDBet.svg';
+import patrickMahomes from './assets/patrickMahomes.svg';
+import greenBayFGBet from './assets/greenBayFGBet.svg';
+import calvinRidley from './assets/Ridley_Calvin.svg';
+import dandreSwift from './assets/RB.svg';
+
+import queueSelector from './assets/queueHighlighter.svg'
+
 import './Queue.css';
 
 interface Person {
@@ -18,33 +27,33 @@ interface Person {
 const dataFake = [
     {
         id: '1',
-        image: 'https://www.takadada.com/wp-content/uploads/2019/07/Cr-7.jpg',
-        name: 'Cristiano Ronaldo',
+        image: steelersWinBet,
+        name: 'Steelers Win Bet',
     },
     {
         id: '2',
-        image: 'https://www.takadada.com/wp-content/uploads/2019/07/Toni-Kross.jpg',
-        name: 'Toni Kroos',
+        image: travisKelceTDBet,
+        name: 'Travis Kelce TD Bet',
     },
     {
         id: '3',
-        image: 'https://vtv1.mediacdn.vn/thumb_w/650/2020/9/13/anh-avatar-1599972574845705232408.jpg',
-        name: 'Cristiano Ronaldo',
+        image: patrickMahomes,
+        name: 'Patrick Mahomes',
     },
     {
         id: '4',
-        image: 'https://cdnmedia.thethaovanhoa.vn/Upload/B0g2ZnIe48e9au7dkcAV3w/files/000039/0000000000000000000211/00000262/00026/0019/001/009/0002/5/Cau%20chuyen%20ve%20mot%20huyen%20thoai.jpg',
-        name: 'Toni Kroos',
+        image: greenBayFGBet,
+        name: 'Green Bay FG Bet',
     },
     {
         id: '5',
-        image: 'https://i1.wp.com/vi.ghienbongda.vn/wp-content/uploads/2020/04/avatar1-5106d-0800.jpg?resize=630%2C400&ssl=1',
-        name: 'Toni Kroos',
+        image: calvinRidley,
+        name: 'Calvin Ridley',
     },
     {
         id: '6',
-        image: 'https://www.takadada.com/wp-content/uploads/2019/07/Antoine-Griezmann-2.jpg',
-        name: 'Cristiano Ronaldo',
+        image: dandreSwift,
+        name: "D'Andre Swift",
     },
 ];
 
@@ -80,6 +89,10 @@ export default function Queue() {
     };
 
     return (
+        <div className="wrap">
+        <div className="queueSelector">
+            <img src={queueSelector} alt="" />
+        </div>
         <div className="queue-container">
             <h2>THE QUEUE</h2>
             <DragDropContext onDragEnd={onSortEnd}>
@@ -135,6 +148,7 @@ export default function Queue() {
                     )}
                 </Droppable>
             </DragDropContext>
+        </div>
         </div>
     );
 }

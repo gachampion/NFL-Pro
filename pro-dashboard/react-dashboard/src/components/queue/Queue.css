@@ -1,5 +1,10 @@
 .queue-container {
     text-align: center;
+    position: absolute;
+    width: 1886.4px;
+    height: 99.33px;
+    left: 246.47px;
+    top: 1060.57px;
 }
 .queue-container h2 {
     font-style: italic;
@@ -84,3 +89,22 @@
     right: 0;
     left: 0;
 }
+
+.queueSelector {
+    z-index: 100;
+    position: absolute;
+    left: 410px;
+    top: 1148px;
+    animation: seconds 1.0s forwards;
+    animation-iteration-count: 1;
+    animation-delay: 140s;
+}
+
+@keyframes seconds {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        left: 665px;
+    }
+  }
