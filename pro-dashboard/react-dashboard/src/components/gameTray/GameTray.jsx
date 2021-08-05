@@ -1,7 +1,9 @@
 
 import React from "react";
-import colts_steelers_start from '../../assets/gameTrayScores/colts_steelers_0_start.svg';
-import colts_steelers_fin from '../../assets/gameTrayScores/colts_steelers_0_fin.svg'
+import colts_steelers_0 from '../../assets/gameTrayScores/colts_steelers_0.svg';
+import colts_steelers_1 from '../../assets/gameTrayScores/colts_steelers_1.svg';
+import colts_steelers_2 from '../../assets/gameTrayScores/colts_steelers_2.svg';
+import colts_steelers_3 from '../../assets/gameTrayScores/colts_steelers_3.svg';
 import falcons_chiefs_0 from '../../assets/gameTrayScores/falcons_chiefs_0.svg';
 import ravens_giants_0 from '../../assets/gameTrayScores/ravens_giants_0.svg';
 import texans_bengals_0 from '../../assets/gameTrayScores/texans_bengals_0.svg';
@@ -19,7 +21,7 @@ class App extends React.Component{
   constructor(){
     super();
     this.state = {
-      currGame: colts_steelers_start
+      currGame: colts_steelers_0
     }
   }
 
@@ -31,8 +33,18 @@ class App extends React.Component{
 
   componentDidMount() {
     this.timer = setTimeout(
-      () => this.handleSteelerGame(colts_steelers_fin),
-      1000*3 // in milliseconds, 3s for fast show
+      () => this.handleSteelerGame(colts_steelers_1),
+      1000*90 // in milliseconds, 3s for fast show
+    )
+
+    this.timer = setTimeout(
+      () => this.handleSteelerGame(colts_steelers_2),
+      1000*133 // in milliseconds, 3s for fast show
+    )
+
+    this.timer = setTimeout(
+      () => this.handleSteelerGame(colts_steelers_3),
+      1000*140 // in milliseconds, 3s for fast show
     )
   }
 
