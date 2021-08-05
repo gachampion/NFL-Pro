@@ -3,6 +3,7 @@ import GameTray from "./components/gameTray/GameTray";
 import VideoStream from "./components/videoStream/VideoStream";
 import GameWidget from "./components/gameWidget/GameWidget";
 import SocialWidget from "./components/socialWidget/SocialWidget";
+import Queue from "./components/queue/Queue"
 import './App.css';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <VideoStream />
         <GameWidget />
         <SocialWidget />
+        <Queue />
     </div>
   );
 }

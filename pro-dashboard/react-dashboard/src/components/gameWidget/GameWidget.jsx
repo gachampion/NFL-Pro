@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import VideoPop from 'react-video-pop';
 
 import betting_selected from './assets/betting_selected.svg';
 import betting_unselected from './assets/betting_unselected.svg';
@@ -14,8 +13,6 @@ import statsPage from './assets/statsPage.svg';
 import playerStatsPage from './assets/playerStatsPage.svg';
 
 import fantasyHighlightFootage from './assets/footage/kelce touchdown.mp4';
-
-import streamContent from '/Users/m.ajith/Desktop/Main/fork/nfl-pro/pro-dashboard/react-dashboard/src/components/videoStream/footage/nflpro-livecast_compressed.mp4';
 
 import "./GameWidget.css";
 

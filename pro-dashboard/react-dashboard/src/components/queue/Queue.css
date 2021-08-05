@@ -1,0 +1,86 @@
+.queue-container {
+    text-align: center;
+}
+.queue-container h2 {
+    font-style: italic;
+}
+.queue-list {
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.queue-item {
+    background: linear-gradient(
+            179.75deg,
+            rgba(25, 51, 71, 0) 53.77%,
+            #60e4fb 125.6%
+        ),
+        linear-gradient(180deg, #193347 45.31%, #1b1a26 100%), #193347;
+    padding: 15px 40px 15px 15px;
+    display: flex;
+    align-items: center;
+    clip-path: polygon(0% 0%, 90% 0, 100% 50%, 90% 100%, 0% 100%);
+    width: 200px;
+    justify-content: space-between;
+    position: relative;
+    border: 3px solid #193347;
+    border-right: 0;
+}
+
+.queue-item-arrow {
+    position: absolute;
+    width: 30px;
+    height: 101%;
+    background: linear-gradient(180deg, #223743 76.56%, #1b1a26 100%);
+    top: -1px;
+    right: 0;
+    clip-path: polygon(39% 0, 100% 50%, 39% 100%, 0% 100%, 82% 50%, 0% 0);
+}
+
+.queue-item:not(:first-child) {
+    margin-left: -30px;
+    padding-left: 45px;
+    clip-path: polygon(0% 0%, 91% 0, 100% 50%, 91% 100%, 0% 100%);
+}
+
+.queue-item .person {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.queue-item .person .avatar {
+    width: 40px;
+    height: 40px;
+    display: block;
+    border-radius: 100%;
+}
+.queue-item .person .name {
+    font-size: 17px;
+    display: block;
+    width: 100px;
+    text-align: left;
+    font-weight: bold;
+    line-height: 22px;
+}
+
+.queue-item-number {
+    font-size: 45px;
+    background: -webkit-linear-gradient(45deg, #e47aff 0%, #45fafa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sortableItem {
+    position: relative;
+    cursor: grab;
+}
+.sortableItem::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
