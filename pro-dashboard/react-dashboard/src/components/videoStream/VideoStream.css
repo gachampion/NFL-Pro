@@ -10,27 +10,20 @@
     display: none;
 } */
 
-video::-webkit-media-controls-timeline,
-video::-webkit-media-controls-current-time-display,
+video::-webkit-media-controls-timeline, 
+video::-webkit-media-controls-current-time-display, 
 video::-webkit-media-controls-time-remaining-display {
     display: none;
 }
 
 .videoPlayer {
-    width: 100%;
-    display: flex;
-    gap: 30px;
+    position: absolute;
+    width: 1382.6px;
+    height: 777.81px;
+    left: 500.39px;
+    top: 254.54px;
 }
 
 video {
     border-radius: 12.4167px;
-    flex: 2;
-    height: 600px;
-    width: 100%;
-}
-
-.box-video {
-    flex: 1;
-    background-color: rgb(97, 93, 93);
-    border-radius: 10px;
 }
