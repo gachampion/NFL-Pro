@@ -8,3 +8,48 @@
     background: #193347;
     border-radius: 12.4167px;
 }
+
+.sTabs {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 367.29px;
+    height: 23.59px;
+    left: 17px;
+    top: 30px;
+}
+
+.sTabs > img {
+    padding-inline: 16%;
+}
+
+.selectedWindowRight_0 {
+    margin-top: 61px;
+    margin-left: -7px;
+}
+
+.selectedWindowRight_1 {
+    margin-top: 61px;
+    margin-left: -1px;
+}
+
+.chatInput {
+    position: absolute;
+    width: 349.88px;
+    height: 36.39px;
+    left: 1936.38px;
+    top: 917.5px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    -webkit-appearance: none;
+    padding-left: 15px;
+}
+
+.hidden {
+    display: none;
+}

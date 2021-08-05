@@ -30,8 +30,13 @@
     margin-top: 64px;
 }
 
+.selectedWindow1 {
+    margin-top: -5px;
+    margin-left: 2px;
+}
+
 .selectedWindow2 {
-    margin-top: -10px;
+    margin-top: -7px;
     margin-left: 1px;
 }
 

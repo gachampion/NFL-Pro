@@ -49,7 +49,7 @@ export default function GameWidget() {
                     <img src={(selection === 2) ? stats_selected : stats_unselected} onClick={() => setSelection(prevMode => 2)} className="stats" alt="bet" />
                 </div>
                 <img src={(selection === 0) ? bettingPage : '//:0'} className="selectedWindow" alt="" />
-                <img src={(selection === 1) ? fantasyPage : '//:0'} onClick={() => miniPlayerSwitch(prevMode => !prevMode)} className="selectedWindow" alt="" />
+                <img src={(selection === 1) ? fantasyPage : '//:0'} onClick={() => miniPlayerSwitch(prevMode => !prevMode)} className="selectedWindow1" alt="" />
                 {/* <img src={(selection === 2) ? statsPage : '//:0'} onClick={() => playerStatSwitch(prevMode => !prevMode)} className="selectedWindow2" alt="" /> */}
                 <img src={(selection === 2) ? (playerStat ? playerStatsPage: statsPage) : '//:0'} onClick={() => playerStatSwitch(prevMode => !prevMode)} className="selectedWindow2" alt="" />
             </div>
