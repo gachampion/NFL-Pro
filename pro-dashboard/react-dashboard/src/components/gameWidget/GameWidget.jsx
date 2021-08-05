@@ -12,7 +12,7 @@ import fantasyPage from './assets/fantasyPage.svg';
 import statsPage from './assets/statsPage.svg';
 import playerStatsPage from './assets/playerStatsPage.svg';
 
-import fantasyHighlightFootage from './assets/footage/kelce touchdown.mp4';
+import fantasyHighlightFootage from './assets/footage/kelce touchdown.mov';
 
 import "./GameWidget.css";
 
