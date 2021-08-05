@@ -84,16 +84,87 @@
   <canvas id="projector" height="600" width="1400"></canvas>
   <div class="setup" id = "setupStream">
     <div class="setupTitle">
-      <h1 class = "setupTitleSecondary">SETUP<h1 class="setupTitleEmphasis">QUEUE</h1></h1>
+      <h1 class = "setupTitleSecondary">SETUP<h1 class="setupTitleEmphasis">STREAM</h1></h1>
     </div>
-    <div class = "qDropdown">
-      <img src = "assets/queueLogos/Dropdown.png" alt = "">
+    <div class = "stream">
+      <div class="streamBlock">
+        <h1 class = "sundayTitle">
+          SUNDAY 
+        </h1>
+        <div id="progressbar" class = "pbSun">
+          <div id="progress" class="progressPercent"></div>
+        </div>
+        <div id="subscriptionBlock" style="margin-left: 50px;">
+          <div class="subscription">
+            <div class="logoBox">
+              <img src="./assets/subscriptionLogos/nbc.png" width="30px" alt="">
+            </div>
+            <p class="subscriptionTitle">NBC SPORTS</p>
+            <a id="loginButton" class="lb"><p>LOGIN</p></a>
+          </div>
+          <div class="subscription">
+            <div class="logoBox">
+              <img src="./assets/subscriptionLogos/sundayticket.png" width="30px" alt="">
+            </div>
+            <p class="subscriptionTitle">NFL SUNDAY <br>TICKET</p>
+            <a id="loginButton" class="lb2" style="margin-left: 16px;"><p>LOGIN</p></a>
+          </div>
+          <div class="subscription">
+            <div class="logoBox">
+              <img src="./assets/subscriptionLogos/paramount.png" width="30px" alt="">
+            </div>
+            <p class="subscriptionTitle">PARAMOUNT+</p>
+            <a id="loginButton" class="lb3" style="margin-left: 11px;"><p>LOGIN</p></a>
+          </div>
+          <div class="subscription">
+            <div class="logoBox">
+              <img src="./assets/subscriptionLogos/fox.png" width="30px" alt="">
+            </div>
+            <p class="subscriptionTitle">FOX SPORTS</p>
+            <a id="loginButton" class="lb4" style="margin-left: 16px;"><p>LOGIN</p></a>
+          </div>
+        </div>
+      </div>
+      <h1 class = "mondayTitle" >
+        MONDAY
+      </h1>
+      <div id="progressbar" class = "pbMon">
+        <div id="progress" class="progressPercent2"></div>
+      </div>
+      <div id="subscriptionBlock" style="margin-left: 262px;">
+        <div class="subscription">
+          <div class="logoBox">
+            <img src="./assets/subscriptionLogos/espn.png" width="30px" alt="">
+          </div>
+          <p class="subscriptionTitle">ESPN</p>
+          <a id="loginButton" class="lb5" style="margin-left: 45px;"><p>LOGIN</p></a>
+        </div>
+      </div>
+      <h1 class = "thursdayTitle">
+        THURSDAY
+      </h1>
+      <div id="progressbar" class = "pbThurs">
+        <div id="progress" class="progressPercent3"></div>
+      </div>
+      <div id="subscriptionBlock" style="margin-left: 472px;">
+        <div class="subscription">
+          <div class="logoBox">
+            <img src="./assets/subscriptionLogos/network.png" width="30px" alt="">
+          </div>
+          <p class="subscriptionTitle">NFL NETWORK</p>
+          <a id="loginButton" class="lb6" style="margin-left: 8px;"><p>LOGIN</p></a>
+        </div>
+        <div class="subscription">
+          <div class="logoBox">
+            <img src="./assets/subscriptionLogos/prime.png" width="30px" style="height: 30px; width: 30px; margin-left: 0px; margin-top: 0px;"alt="">
+          </div>
+          <p class="subscriptionTitle">PRIME VIDEO</p>
+          <a id="loginButton" class="lb7" style="margin-left: 14px;"><p>LOGIN</p></a>
+        </div>
+      </div>
     </div>
-    <div class = "queue">
-      <img src = "assets/queueLogos/Group 115.png" alt = "">
-    </div>
-    <div class = navContainer style = "margin-top: 120px; margin-left: 42%">
-      <a href = "./index.html" button class = "circle active"></button>
+    <div class = navContainer>
+      <a href = "#setupStream" button class = "circle active"></button>
       <a href = "./fantasy.html" button class = "circle"></button>
       <a href = "./betting.html" button class = "circle"></button>
     </div>

@@ -193,11 +193,6 @@ body {
     margin-top: 225px;
     margin-left: 42%;
 }
-
-.fanView{
-    margin-top: -100px;
-    margin-left: 42%;
-}
 .circle {
     background: #34536A;
     width: 10px;
@@ -247,35 +242,4 @@ body {
     float: left;
     margin-left: 140px;
     margin-top: -10px;
-}
-.fnavContainer{
-    margin-top: -100px;
-    margin-left: 42%;
-}
-.fcircle {
-    background: #34536A;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    border: none;
-    display: inline-block;
-    text-align: center;
-    line-height: 100px;
-    margin-right:15px;
-    margin-top: 1%;
-}
-
-.active{
-    background-color: #8DB5D2;
-}
-
-.qDropdown img{
-    max-width: 550px;
-    margin-left: 50px;
-}
-
-.queue img{
-    max-width: 620px;
-    margin-top: 40px;
-    margin-left: 55px;
 }

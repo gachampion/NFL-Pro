@@ -1,31 +1,22 @@
 .topbar {
     width: 100%;
     height: 50px;
-    background-color:transparent;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    top: 136.58px;
-    width: 2125.69px;
+    background-color: transparent;
     height: 70.57px;
-    left: 62.08px;
-  }
-  
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
 .topbarWrapper {
     flex-direction: row;
     height: 100%;
     padding: 0px 0px;
     display: flex;
+    gap: 24px;
     border-spacing: 20px;
 }
 
 .topbarWrapper > img {
     flex: 0 0 auto;
     text-align: center;
-  
-    margin-right: 24px;
 }
-
-
-  
-  

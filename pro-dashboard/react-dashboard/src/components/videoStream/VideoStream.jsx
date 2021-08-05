@@ -1,24 +1,27 @@
-import React from "react";
-import streamPlaceholder from "./footage/loading_stream_1_cbs.png"
-import streamContent from "./footage/nflpro-livecast_compressed.mp4"
+import React from 'react';
+import streamPlaceholder from './footage/loading_stream_1_cbs.png';
+// import streamContent from "./footage/nflpro-livecast_compressed.mp4"
 
-import "./VideoStream.css";
+import './VideoStream.css';
 
 export default function VideoStream() {
-  return (
-    <div className="videoPlayer">
-    <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
-      <video
-            id="my-video"
-            class="video-js"
-            preload="auto"
-            controls
-            width="1382"
-            height="777"
-            poster={streamPlaceholder}
-        >
-            <source src={streamContent} type="video/mp4" />
-        </video>
-    </div>
-  );
+    return (
+        <div className="videoPlayer">
+            <div className="box-left box-video"></div>
+            <link
+                href="https://vjs.zencdn.net/7.11.4/video-js.css"
+                rel="stylesheet"
+            />
+            <video
+                id="my-video"
+                className="video-js"
+                preload="auto"
+                controls
+                poster={streamPlaceholder}
+            >
+                {/* <source src={streamContent} type="video/mp4" /> */}
+            </video>
+            <div className="box-right box-video"></div>
+        </div>
+    );
 }
