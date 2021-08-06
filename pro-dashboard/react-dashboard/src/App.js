@@ -1,4 +1,4 @@
-import logo from './assets/pro_logo.svg';
+import logo from './assets/nflx_logo.svg';
 import GameTray from "./components/gameTray/GameTray";
 import VideoStream from "./components/videoStream/VideoStream";
 import GameWidget from "./components/gameWidget/GameWidget";
