@@ -5,6 +5,9 @@ import colts_steelers_1 from '../../assets/gameTrayScores/colts_steelers_1.svg';
 import colts_steelers_2 from '../../assets/gameTrayScores/colts_steelers_2.svg';
 import colts_steelers_3 from '../../assets/gameTrayScores/colts_steelers_3.svg';
 import falcons_chiefs_0 from '../../assets/gameTrayScores/falcons_chiefs_0.svg';
+import falcons_chiefs_1 from '../../assets/gameTrayScores/falcons_chiefs_1.svg';
+import falcons_chiefs_2 from '../../assets/gameTrayScores/falcons_chiefs_2.svg';
+import falcons_chiefs_3 from '../../assets/gameTrayScores/falcons_chiefs_3.svg';
 import ravens_giants_0 from '../../assets/gameTrayScores/ravens_giants_0.svg';
 import texans_bengals_0 from '../../assets/gameTrayScores/texans_bengals_0.svg';
 import jags_bears_0 from '../../assets/gameTrayScores/jags_bears_0.svg';
@@ -21,31 +24,54 @@ class App extends React.Component{
   constructor(){
     super();
     this.state = {
-      currGame: colts_steelers_0
+      coltsGame: colts_steelers_0,
+      cheifsGame: falcons_chiefs_0
     }
   }
 
-  handleSteelerGame = (newGame) =>{
+  handleColtsGame = (newGame) =>{
     this.setState({
-      currGame: newGame
+      coltsGame: newGame
+    })
+  }
+
+  handleChiefsGame = (newGame) =>{
+    this.setState({
+      cheifsGame: newGame
     })
   }
 
   componentDidMount() {
     this.timer = setTimeout(
-      () => this.handleSteelerGame(colts_steelers_1),
+      () => this.handleColtsGame(colts_steelers_1),
       1000*90 // in milliseconds, 3s for fast show
     )
 
     this.timer = setTimeout(
-      () => this.handleSteelerGame(colts_steelers_2),
+      () => this.handleColtsGame(colts_steelers_2),
       1000*133 // in milliseconds, 3s for fast show
     )
 
     this.timer = setTimeout(
-      () => this.handleSteelerGame(colts_steelers_3),
+      () => this.handleColtsGame(colts_steelers_3),
       1000*140 // in milliseconds, 3s for fast show
     )
+
+    this.timer = setTimeout(
+      ()=> this.handleChiefsGame(falcons_chiefs_1),
+      1000*141
+    )
+
+    this.timer = setTimeout(
+      ()=> this.handleChiefsGame(falcons_chiefs_2),
+      1000*330
+    )
+
+    this.timer = setTimeout(
+      ()=> this.handleChiefsGame(falcons_chiefs_3),
+      1000*371
+    )
+
   }
 
   componentWillUnmount() {
@@ -56,8 +82,8 @@ class App extends React.Component{
   return(
 <div className="topbar">
       <div className="topbarWrapper">
-        <img src={this.state.currGame} className="scoreCard" alt="" />
-        <img src={falcons_chiefs_0} className="scoreCard" alt="" />
+        <img src={this.state.coltsGame} className="scoreCard" alt="" />
+        <img src={this.state.cheifsGame} className="scoreCard" alt="" />
         <img src={ravens_giants_0} className="scoreCard" alt="" />
         <img src={texans_bengals_0} className="scoreCard" alt="" />
         <img src={jags_bears_0} className="scoreCard" alt="" />
