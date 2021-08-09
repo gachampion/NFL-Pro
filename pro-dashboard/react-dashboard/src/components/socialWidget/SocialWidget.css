@@ -1,3 +1,25 @@
+.p2pBettingPanel {
+    position: absolute;
+    left: 1542px;
+    top: 285px;
+}
+
+.p2pBettingPanel img {
+    box-shadow: 0px 10px 21px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+
+.p2pBet {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    z-index: 100;
+    left: 0px;
+    top: 40px;
+}
+
 .socialTabs {
     position: absolute;
     width: 409.75px;
