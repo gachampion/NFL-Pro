@@ -36,7 +36,7 @@ export default function SocialWidget() {
                 <img src={(selection === 4) ? chatPage3 : '//:0'} className={(selection === 4) ? "selectedWindowRight_0" : "hidden"} alt="" />
                 <img src={(selection === 1) ? tweetsPage : '//:0'} className="selectedWindowRight_1" alt="" />
             </div>
-            <input className={((selection === 0) || (selection === 2)) ? "chatInput" : "hidden"} type="text" placeholder="Send a Message" onKeyDown={_handleKeyDown}/>
+            <input className={((selection === 0) || (selection === 2) || (selection === 3) || (selection === 4)) ? "chatInput" : "hidden"} type="text" placeholder="Send a Message" onKeyDown={_handleKeyDown}/>
             <div className="p2pBettingPanel">
                 <img src={(selection === 3) ? p2pBetPanel : '//:0'} className="p2pBettingBackdrop" alt="" onClick={() => setSelection(prevMode => 4)}/>
             </div>
