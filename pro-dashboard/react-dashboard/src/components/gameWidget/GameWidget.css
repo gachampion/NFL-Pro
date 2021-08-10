@@ -63,3 +63,24 @@ video.hide {
 .hidden {
     visibility: hidden;
 }
+
+.rapper video::-webkit-media-controls-timeline, 
+.rapper video::-webkit-media-controls-current-time-display, 
+.rapper video::-webkit-media-controls-time-remaining-display,
+.rapper video::-webkit-media-controls-fullscreen-button,
+.rapper video::-webkit-media-controls-volume-slider,
+.rapper video::-webkit-media-controls-volume-slider-mute-button,
+.rapper video::-webkit-media-controls-mute-button {
+    display: none;
+}
+
+video {
+    border-radius: 20px;
+}
+
+.vid2 {
+    position: absolute;
+    left: 90px;
+    top: 455px;
+}
+

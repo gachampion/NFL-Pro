@@ -13,6 +13,7 @@ import statsPage from './assets/statsPage.svg';
 import playerStatsPage from './assets/playerStatsPage.svg';
 
 import fantasyHighlightFootage from './assets/footage/kelce touchdown.mov';
+import chiefsFalconsPlay_0 from './assets/footage/chiefsFalconsPlay_0.mp4';
 
 import "./GameWidget.css";
 
@@ -49,6 +50,23 @@ export default function GameWidget() {
                 <img src={(selection === 1) ? fantasyPage : '//:0'} onClick={() => miniPlayerSwitch(prevMode => !prevMode)} className="selectedWindow1" alt="" />
                 {/* <img src={(selection === 2) ? statsPage : '//:0'} onClick={() => playerStatSwitch(prevMode => !prevMode)} className="selectedWindow2" alt="" /> */}
                 <img src={(selection === 2) ? (playerStat ? playerStatsPage: statsPage) : '//:0'} onClick={() => playerStatSwitch(prevMode => !prevMode)} className="selectedWindow2" alt="" />
+            </div>
+            <div class="rapper">
+            <div class={((selection === 2) && (!playerStat)) ? 'vid2' : 'vid2 hidden'}>
+                <video
+                    id="video"
+                    class="video-js"
+                    preload="auto"
+                    controls
+                    controlsList="nodownload"
+                    disablePictureInPicture
+                    muted
+                    width="364"
+                    height="186"
+                    >
+                    <source src={chiefsFalconsPlay_0} type="video/mp4" />
+                </video>
+            </div>
             </div>
             <div class={miniPlayer ? 'vid' : 'vid hidden'}>
                 <button class="close" onClick={() => miniPlayerSwitch(prevMode => !prevMode)}>Hide</button>
