@@ -9,7 +9,14 @@
     width: 2125.69px;
     height: 70.57px;
     left: 62.08px;
-  }
+}
+
+.freshFade {
+    position: absolute;
+    left: 2100.28px;
+    top: 0px;
+    z-index: 1000;
+}
   
 .topbarWrapper {
     flex-direction: row;

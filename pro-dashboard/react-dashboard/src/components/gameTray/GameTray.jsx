@@ -18,6 +18,8 @@ import cowboys_eagles from '../../assets/gameTrayScores/cowboys_eagles.svg';
 import seahawks_rams from '../../assets/gameTrayScores/seahawks_rams.svg';
 import packers_titans from '../../assets/gameTrayScores/packers_titans.svg';
 
+import theFreshFade from "./theFreshFade.svg"
+
 import "./GameTray.css";
 
 class App extends React.Component{
@@ -81,6 +83,7 @@ class App extends React.Component{
   render(){
   return(
 <div className="topbar">
+      <img src={theFreshFade} className="freshFade" alt="" />
       <div className="topbarWrapper">
         <img src={this.state.coltsGame} className="scoreCard" alt="" />
         <img src={this.state.cheifsGame} className="scoreCard" alt="" />

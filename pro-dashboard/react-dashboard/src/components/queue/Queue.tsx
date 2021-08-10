@@ -27,23 +27,23 @@ interface Person {
 const dataFake = [
     {
         id: '1',
+        image: greenBayFGBet,
+        name: 'Green Bay FG Bet',
+    },
+    {
+        id: '2',
         image: steelersWinBet,
         name: 'Steelers Win Bet',
     },
     {
-        id: '2',
+        id: '3',
         image: travisKelceTDBet,
         name: 'Travis Kelce TD Bet',
     },
     {
-        id: '3',
+        id: '4',
         image: patrickMahomes,
         name: 'Patrick Mahomes',
-    },
-    {
-        id: '4',
-        image: greenBayFGBet,
-        name: 'Green Bay FG Bet',
     },
     {
         id: '5',
@@ -91,7 +91,7 @@ export default function Queue() {
     return (
         <div className="wrap">
         <div className="queueSelector">
-            <img src={queueSelector} alt="" />
+            <img src={queueSelector} alt="" width="299px"/>
         </div>
         <div className="queue-container">
             <h2>THE QUEUE</h2>

@@ -19,8 +19,8 @@
 .queue-item {
     background: linear-gradient(
             179.75deg,
-            rgba(25, 51, 71, 0) 53.77%,
-            #60e4fb 125.6%
+            rgba(172, 145, 114, 0) 53.77%,
+            #285b64 125.6%
         ),
         linear-gradient(180deg, #193347 45.31%, #1b1a26 100%), #193347;
     padding: 15px 40px 15px 15px;
@@ -33,6 +33,55 @@
     border: 3px solid #193347;
     border-right: 0;
 }
+
+.queue-item:nth-child(2) {
+    background: linear-gradient(
+            179.75deg,
+            rgba(255, 136, 0, 0) 53.77%,
+            #00b9da 125.6%
+        ),
+        linear-gradient(180deg, #193347 45.31%, #1b1a26 100%), #193347;
+    animation: onFieldHighlight 1.0s forwards;
+    animation-iteration-count: 1;
+    animation-delay: 145s;
+}
+
+.queue-item:nth-child(3) {
+    background: linear-gradient(
+            179.75deg,
+            rgba(255, 136, 0, 0) 53.77%,
+            #00b9da 125.6%
+        ),
+        linear-gradient(180deg, #193347 45.31%, #1b1a26 100%), #193347;
+}
+
+.queue-item:nth-child(4) {
+    background: linear-gradient(
+            179.75deg,
+            rgba(255, 136, 0, 0) 53.77%,
+            #00b9da 125.6%
+        ),
+        linear-gradient(180deg, #193347 45.31%, #1b1a26 100%), #193347;
+}
+
+@keyframes onFieldHighlight {
+    0% {
+        background: linear-gradient(
+            179.75deg,
+            rgba(255, 136, 0, 0) 53.77%,
+            #00b9da 125.6%
+        ),
+        linear-gradient(180deg, #193347 45.31%, #1b1a26 100%), #193347;
+    }
+    100% {
+        background: linear-gradient(
+            179.75deg,
+            rgba(172, 145, 114, 0) 53.77%,
+            #285b64 125.6%
+        ),
+        linear-gradient(180deg, #193347 45.31%, #1b1a26 100%), #193347;
+    }
+  }
 
 .queue-item-arrow {
     position: absolute;
@@ -93,8 +142,9 @@
 .queueSelector {
     z-index: 100;
     position: absolute;
-    left: 410px;
-    top: 1148px;
+    left: 637px;
+    top: 1155px;
+    width: 200px;
     animation: seconds 1.0s forwards;
     animation-iteration-count: 1;
     animation-delay: 140s;
@@ -105,6 +155,6 @@
         opacity: 1;
     }
     100% {
-        left: 665px;
+        left: 895px;
     }
   }
