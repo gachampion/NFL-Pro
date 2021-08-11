@@ -243,3 +243,15 @@ body {
     margin-left: 140px;
     margin-top: -10px;
 }
+
+.queueSetup {
+    position: absolute;
+    left: 47px;
+    top: 120px;
+}
+
+.queueSetup2 {
+    position: absolute;
+    left: 720px;
+    top: 195px;
+}
