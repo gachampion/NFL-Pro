@@ -46,32 +46,32 @@ class App extends React.Component{
   componentDidMount() {
     this.timer = setTimeout(
       () => this.handleColtsGame(colts_steelers_1),
-      1000*90 // in milliseconds, 3s for fast show
+      1000*32 // in milliseconds, 3s for fast show
     )
 
     this.timer = setTimeout(
       () => this.handleColtsGame(colts_steelers_2),
-      1000*133 // in milliseconds, 3s for fast show
+      1000*77 // in milliseconds, 3s for fast show
     )
 
     this.timer = setTimeout(
       () => this.handleColtsGame(colts_steelers_3),
-      1000*140 // in milliseconds, 3s for fast show
+      1000*82 // in milliseconds, 3s for fast show
     )
 
     this.timer = setTimeout(
       ()=> this.handleChiefsGame(falcons_chiefs_1),
-      1000*141
+      1000*83
     )
 
     this.timer = setTimeout(
       ()=> this.handleChiefsGame(falcons_chiefs_2),
-      1000*330
+      1000*262
     )
 
     this.timer = setTimeout(
       ()=> this.handleChiefsGame(falcons_chiefs_3),
-      1000*371
+      1000*309
     )
 
   }

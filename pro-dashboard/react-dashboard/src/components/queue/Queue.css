@@ -43,7 +43,7 @@
         linear-gradient(180deg, #193347 45.31%, #1b1a26 100%), #193347;
     animation: onFieldHighlight 1.0s forwards;
     animation-iteration-count: 1;
-    animation-delay: 145s;
+    animation-delay: 83s;
 }
 
 .queue-item:nth-child(3) {
@@ -147,7 +147,7 @@
     width: 200px;
     animation: seconds 1.0s forwards;
     animation-iteration-count: 1;
-    animation-delay: 140s;
+    animation-delay: 82s;
 }
 
 @keyframes seconds {
